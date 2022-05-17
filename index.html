@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="index.css">
+   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Roboto:wght@300&display=swap" 
+    rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <main class="main" id="page1">
+        <div class="menu_items">
+
+            <p id="logo">ChatApp</p>
+            <p id="menu"><i class="fa-solid fa-bars"></i></p>
+            <ul class="menu">
+                <li class="item"><a href="">Home</a></li>
+                <li class="item"><a href="">Blog</a></li>
+                <li class="item"><a href="">Sign Up</a></li>
+            </ul>
+        </div><br><br><br>
+     
+        <div class="main_container">
+            <div>
+                <p class="advert">One Click
+                    <i class="fa-thin fa-comment-arrow-up"></i><br> Zero Friction<i style="color:#ebc934 ;" class="fa-solid fa-share"></i></p>
+            </div>
+            <div class="social_main">
+                <img id="image" src="images/social.jpg" alt="">
+            </div>
+        </div>
+       
+
+    </main>
+
+    <main class="main" id="page2">
+
+        <div >
+            <form class="form"  action="">
+                <label class="label" for="name">Name</label>
+                <input type="text" id="name"><br>
+                <label class="label" for="">Password</label>
+                <div class="password_container">
+                    <input id="password" type="password" name="password" autocomplete="current-password" required="" id="id_password">
+                    <i class="far fa-eye" id="togglePassword" style="cursor: pointer; margin-left: -24px;"></i>
+
+                </div><br>
+                
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+
+    </main>
+    <!-- <i class="fa-thin fa-caret-down"></i> -->
+    <main class="main" id="page3">
+        <div id="chatBox">
+            <div id="chat_menu">
+                <div class="profile_container">
+                    <div class="profile"></div>
+                </div>
+               
+                <div class="icons">
+                    <div class="search"><i style="font-size: 25px;color: rgb(18, 18, 24);" class="fab fa-solid fa-magnifying-glass"></i></div>
+                    <div class="chat_options"><i style="font-size: 25px; color: rgb(18, 18, 24);" class="fab fa-solid fa-ellipsis-vertical"></i></div>
+                </div>
+                
+
+            </div>
+
+        </div>
+        <form class="chat" action="">
+            <input id="textInput" type="text">
+            <button id="send">Send</button>
+        </form>
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+    <script src="page.js"></script>
+    
+</body>
+</html>
