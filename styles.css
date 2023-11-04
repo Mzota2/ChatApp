@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&family=Michroma&family=Public+Sans:wght@300;400;700&family=Roboto&family=Rubik:wght@400;500;700&display=swap');
+:root{
+    /* text-color */
+    --paleViolet: hsl(276, 100%, 81%);
+    --moderateViolet: hwb(276 25% 22%);
+    --darkViolet: hsl(271, 15%, 43%);
+    --greyishBlue: hsl(206, 6%, 79%);
+    --darkViolet: hsl(271, 36%, 24%);
+    --darkGreyishViolet: hsl(270, 7%, 64%);
+
+    /* gradients */
+    --lightMagenta: hsl(293, 100%, 63%);
+    --lightViolet: hsl(264, 100%, 61%);
+
+    /* secondary */;
+    --white: hsl(0, 0%, 100%);
+    --appBackground: hsl(270, 20%, 96%);
+    --submitBtnBackground: hsl(271, 36%, 24%);
+    --radioBtnOutline: hsl(289, 100%, 72%);
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: var(--appBackground);
+}
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.mobile-display{
+    position: relative;
+    height: 100vh;
+    width: 50%;
+}
+.display-right{
+    min-width: 300px;
+    width: 30%;
+    
+}
+.background-box{
+    min-width: 400px;
+    max-width: 550px;
+    height: 80%;
+    width: 80%;
+    margin-left: -10%;
+    background-image: linear-gradient(to bottom, var(--lightMagenta), var(--lightViolet));
+    border-bottom-left-radius: 49%;
+    border-bottom-right-radius: 49%;
+}
+
+.mobile-mockup{
+    padding: 1em;
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    height: 600px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 2px 2px 8px rgb(189, 187, 187);
+
+}
+
+.background-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: var(--appBackground);
+    border-radius: 15px;
+}
+.mockup-top-bar{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mockup-tob-bar-1{
+    top: 0;
+    position: absolute;
+    width: 170px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+.mockup-tob-bar-2{
+    max-height: 100px;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--lightViolet), var(--lightMagenta));
+    display: flex;
+    flex-direction: column;
+}
+.mockup-profile-container{
+    margin-top: 0.5em;
+    padding:1em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mockup-profile-container-1{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    
+}
+
+.mockup-profile-container h2{
+    color: white;
+    font-size: 15px;
+}
+.mockup-profile-container p{
+    color: var(--paleViolet);
+    font-size: 12px;
+}
+.mockup-image-container{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--lightMagenta);
+}
+.profile-image{
+    border-radius: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+.mockup-profile-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.mockup-text-area{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    gap: 10px;
+    
+}
+
+.message-box{
+    padding: 10px 10px;
+    width: fit-content;
+    max-width: 150px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(230, 228, 228);
+    
+}
+.sender-text{
+    background-color: rgb(223, 221, 230);
+}
+.receiver-text{
+    margin-right:20px;
+    align-self: flex-end;
+    background-color: white;
+}
+.message-box p{
+    font-size: 10px;
+    line-height: 1.5em;
+    color: var(--moderateViolet);
+}
+.image-receiver-text{
+    justify-content: space-between;
+    width: 45%;
+    margin-right:20px;
+    align-self:flex-end;
+    display: flex;
+}
+.message-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 15%;
+}
+.receiver-image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.sender-price-detail-text{
+    height: 35px;
+    width: 60%;
+    border-radius: 10px 10px 10px 0px;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    color: white;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, var(--lightMagenta), var(--lightViolet));
+}
+.sender-price-detail-text p{
+    color: rgb(238, 236, 236);
+}
+
+.sender-price-detail-text h2{
+    color: white;
+}
+.mockup-bottom-bar{
+    position: relative;
+    margin-top: 1em;
+    width: 90%;
+}
+.text-area-input{
+    text-indent: 10px;
+    height: 35px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    outline: none;
+    border: none;
+    color: var(--greyishBlue);
+
+}
+.mockup-btn{
+    right: 0;
+    top: 10%;
+    position: absolute;
+    height: 80%;
+    width: 30px;
+    background-color: var(--submitBtnBackground);
+    border-radius: 50%;
+}
+
+.radio-btn{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border:1px solid var(--radioBtnOutline);
+}
+.next-btn, .menu-btn{
+    color: white;
+}
+
+
+
+/* Typography */
+
+.display-right p{
+    font-weight: 400;
+    line-height: 2em;
+    color: var(--darkGreyishViolet);
+}
+h1, h2{
+    margin: 0;
+}
+h1{
+    margin:1em 0;
+    font-weight: 500;
+}
+p{
+    margin: 0;
+}
+
+.sender-text p{
+    color: var(--moderateViolet);
+}
+
+.receiver-text p{
+    color: var(--darkViolet);
+}
+
+@media screen and (max-width:1020px){
+    main{
+        justify-content: space-between;
+    }
+
+    .display-right{
+        margin-right: 1em;
+        
+    }
+}
+
+@media screen and (max-width:1000px){
+    main{
+        flex-direction: column;
+        gap: 4em;
+    }
+    .mobile-display{
+        width: 100%;
+    }
+    .background-box{
+        height: 620px;
+        margin-left: -40%;
+    }
+
+    .mobile-mockup{
+        top: 7%;
+        left: 20%;
+    }
+    .display-right{
+        text-align: center;
+
+    }
+  
+
+}
