@@ -36,7 +36,6 @@ main{
 }
 .mobile-display{
     position: relative;
-    height: 100vh;
     width: 50%;
 }
 .display-right{
@@ -47,7 +46,7 @@ main{
 .background-box{
     min-width: 400px;
     max-width: 550px;
-    height: 80%;
+    height: 670px;
     width: 80%;
     margin-left: -10%;
     background-image: linear-gradient(to bottom, var(--lightMagenta), var(--lightViolet));
@@ -282,15 +281,21 @@ p{
 
 @media screen and (max-width:1000px){
     main{
+        width: 100%;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 4em;
+
     }
     .mobile-display{
         width: 100%;
+
     }
     .background-box{
         height: 620px;
-        margin-left: -40%;
+        margin-left: -20%;
     }
 
     .mobile-mockup{
@@ -298,9 +303,46 @@ p{
         left: 20%;
     }
     .display-right{
+        margin: 0;
         text-align: center;
 
     }
   
 
+}
+
+@media screen and (max-width:675px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .background-box{
+        width: 60%;
+        left: -10%;
+        z-index: 1;
+        top: 0;
+        position: absolute;
+        
+    }
+    .mobile-display{
+        padding:2em 0 0 0;
+        margin: 0;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+    }
+    .mobile-mockup{
+        z-index: 2;
+        position: static;
+        position: relative;
+
+        left: 0;
+        background-color: white;
+    }
+  
 }
