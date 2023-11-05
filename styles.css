@@ -215,21 +215,20 @@ main{
     width: 100%;
     border-radius: 20px;
     background-color: white;
-    outline: none;
-    border: none;
     color: var(--greyishBlue);
+    display: flex;
+    align-items: center;
 
 }
 .mockup-btn{
-    right: 0;
-    top: 10%;
+    right: 2.5px;
+    top: 2.5px;
     position: absolute;
-    height: 80%;
+    height: 30px;
     width: 30px;
     background-color: var(--submitBtnBackground);
     border-radius: 50%;
 }
-
 .radio-btn{
     height: 15px;
     width: 15px;
@@ -239,8 +238,6 @@ main{
 .next-btn, .menu-btn{
     color: white;
 }
-
-
 
 /* Typography */
 
@@ -268,23 +265,22 @@ p{
     color: var(--darkViolet);
 }
 
-@media screen and (max-width:1020px){
-    main{
-        justify-content: space-between;
-    }
 
-    .display-right{
-        margin-right: 1em;
-        
-    }
+
+@media screen and (max-width:1150px) {
+   main{
+    justify-content: space-between;
+   }
+   .display-right{
+    margin-right: 1em;
+   }
+    
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:850px){
     main{
         width: 100%;
-        display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         gap: 4em;
 
@@ -310,6 +306,7 @@ p{
   
 
 }
+
 
 @media screen and (max-width:675px){
     main{
